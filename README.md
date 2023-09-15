@@ -1,2 +1,2 @@
-# [template-web](https://github.com/dudushy/template-web/)
-Template for Web projects.
+# [ruleOfThree.html](https://github.com/dudushy/ruleOfThree.html/)
+A simple Rule of Three Tool.
