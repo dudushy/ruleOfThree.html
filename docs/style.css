@@ -1,0 +1,52 @@
+:root {
+  --responsiveMax: 1vmax;
+  --responsiveMin: 1vmin;
+  --rmax2px: unit(calc(var(--responsiveMax) + 0px), px);
+  --rmin2px: unit(calc(var(--responsiveMin) + 0px), px);
+
+  --text: #ffffff;
+  --wall: #000000;
+
+  --primary: #3880ff;
+  --secondary: #3dc2ff;
+  --tertiary: #5260ff;
+  --success: #2dd36f;
+  --warning: #ffc409;
+  --danger: #eb445a;
+  --dark: #222428;
+  --medium: #92949c;
+  --light: #f4f5f8;
+}
+
+@media (orientation: portrait) {
+  :root {
+    --responsiveMax: 1vh;
+    --responsiveMin: 1vw;
+    --rmax2px: unit(calc(var(--responsiveMax) + 0px), px);
+    --rmin2px: unit(calc(var(--responsiveMin) + 0px), px);
+  }
+}
+
+@media (orientation: landscape) {
+  :root {
+    --responsiveMax: 1vw;
+    --responsiveMin: 1vh;
+    --rmax2px: unit(calc(var(--responsiveMax) + 0px), px);
+    --rmin2px: unit(calc(var(--responsiveMin) + 0px), px);
+  }
+}
+
+body {
+  color: var(--text);
+  background-color: var(--wall);
+  text-align: center;
+  font-family: monospace;
+}
+
+a {
+  color: var(--tertiary);
+}
+
+span#heart {
+  color: var(--danger);
+}
