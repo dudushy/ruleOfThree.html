@@ -15,11 +15,39 @@
   --light: #f4f5f8;
 }
 
+html {
+  overflow: hidden;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   color: var(--text);
   background-color: var(--wall);
   text-align: center;
   font-family: monospace;
+  overflow: auto;
+}
+
+header {
+  border-bottom: calc(var(--responsiveUnit) * 0.1) solid var(--light);
+}
+
+footer {
+  border-top: calc(var(--responsiveUnit) * 0.1) solid var(--light);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
@@ -28,13 +56,6 @@ a {
 
 span#heart {
   color: var(--danger);
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .input-wrapper {
