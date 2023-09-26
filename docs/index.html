@@ -19,18 +19,20 @@
 
   <main>
     <div class="input-wrapper">
-      <input id="value1" type="number" placeholder="value1" value="1">
+      <input class="value" id="value1" type="number" placeholder="value1" value="1">
 
-      <input id="result1" type="number" placeholder="result1" value="100">
+      <input class="result" id="result1" type="number" placeholder="result1" value="100">
     </div>
 
     <div class="input-wrapper">
-      <input id="value2" type="number" placeholder="value2" value="0.5">
+      <input class="value" id="value2" type="number" placeholder="value2" value="0.5">
 
-      <input id="result2" type="number" placeholder="result2" value="50" readonly>
+      <input class="result" id="result2" type="number" placeholder="result2" value="50" readonly>
     </div>
 
     <button onclick="calculate()">calculate</button>
+
+    <p id="calcs"></p>
   </main>
 
   <hr>
